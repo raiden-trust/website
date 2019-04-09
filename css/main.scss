@@ -1,0 +1,152 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@charset "utf-8";
+@import 'fonts';
+@import 'footer';
+@import 'privacy_policy';
+@import 'landing';
+
+body {
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  word-break: break-word;
+}
+nav {
+  background: white;
+  padding: 0 20px;
+}
+nav ul a {
+  color: black;
+}
+
+iframe {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16);
+  max-width: 90%;
+}
+section {
+  margin: 0 !important;
+  padding: 74px;
+  text-align: center;
+  min-height: auto;
+}
+.container {
+  margin: auto;
+}
+.no-padding {
+  padding: 0;
+}
+section.dark {
+  background-image: linear-gradient(293deg, #000000, #313131);
+  color: white;
+}
+
+section.dark h1 {
+  color: white;
+}
+section h1.blue {
+  color: #00d0f6;
+  background: transparent !important;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  margin-top: 0;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+p a {
+  font-weight: 400;
+  font-size: 17px;
+  color: #00d0f6;
+}
+
+p.medium {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.long {
+  max-width: 650px;
+  margin: auto;
+}
+
+.x-long {
+  max-width: 900px;
+  margin: auto;
+}
+
+.box {
+  padding: 60px !important;
+  text-align: left;
+}
+.line-span {
+  margin-left: 15px;
+  padding-left: 38px;
+  line-height: 1;
+  font-size: 6px;
+  color: transparent;
+  background-image: linear-gradient(to right, #90e9fa, #00d4ff);
+}
+.first-line-span {
+  margin-right: 15px;
+  padding-right: 38px;
+  line-height: 1;
+  font-size: 6px;
+  color: transparent;
+  background-image: linear-gradient(to right, #90e9fa, #00d4ff);
+}
+
+@media (max-width: 600px) {
+  /*Para monitores small*/
+  section {
+    padding: 30px 10px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .footer-box div {
+    margin-top: 30px;
+  }
+  #sidebar {
+    display: none;
+  }
+}
+
+.justify {
+  text-align: justify !important;
+  text-justify: inter-word;
+}
+
+.brand-logo img {
+  height: 40px;
+  margin: 12px 0;
+}
+
+.brand-logo {
+  left: 0 !important;
+  filter: invert(100%);
+}
+
+.logo-wrapper {
+  top: 0;
+  left: 0;
+  position: sticky;
+  text-align: left !important;
+  padding-left: 16px;
+  padding-top: 8px;
+}

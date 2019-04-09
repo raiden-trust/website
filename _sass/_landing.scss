@@ -1,0 +1,51 @@
+.hero {
+  width: 100%;
+  height: calc(100vh - 50px);
+  margin: 0;
+  padding: 50px 8.5%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+$content-margin: 100px;
+.hero .content {
+  margin-left: $content-margin;
+  max-width: 650px;
+}
+i {
+  color: black;
+}
+.hero h1 {
+  font-size: 6rem;
+  line-height: 6.5rem;
+  font-family: 'Roboto Mono', monospace;
+  text-align: left;
+  margin-left: $content-margin;
+}
+
+.hero h3 {
+  margin-left: $content-margin;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  $mobile-margin: 0;
+
+  .hero h1 {
+    margin-left: $mobile-margin;
+  }
+  .hero h3 {
+    margin-left: $mobile-margin;
+  }
+  .hero .content {
+    margin-left: $mobile-margin;
+  }
+  .hero {
+    height: 100%;
+  }
+}

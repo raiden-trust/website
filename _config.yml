@@ -1,0 +1,14 @@
+# Site settings
+title: Raiden true
+description:
+email:
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: # the base hostname & protocol for your site
+
+logo: http://raiden.network/img/Raiden_Logo.png
+image: http://raiden.network/img/Raiden_Logo.png
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
