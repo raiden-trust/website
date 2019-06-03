@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
-  {% include head.html %}
-  <body>
-    {{ content }}
-  </body>
+{% include head.html %}
+<body>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">
+                <img src="./img/logo-black.png"/>
+            </a>
+            <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down valign-wrapper">
+                <li><a href="mailto:contact@raidentrust.li">Contact</a></li>
+                <li><a href="/guidelines.html">Guidelines</a></li>
+                <li><a href="https://raidentrust.typeform.com/to/MCUV71" target="_blank">Apply Now</a></li>
+            </ul>
+            <ul class="sidenav" id="mobile">
+                <li><a class="bug-bounty-btn" href="mailto:contact@raidentrust.li">Contact</a></li>
+                <li><a href="/guidelines.html">Guidelines</a></li>
+                <li><a href="https://raidentrust.typeform.com/to/MCUV71" target="_blank">Apply Now</a></li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+{{ content }}
+</body>
 </html>
