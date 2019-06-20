@@ -175,7 +175,21 @@ ol.numbered {
   list-style-type: decimal;
 }
 
-
 .trigger {
   margin: 0 !important;
+}
+
+.apply-btn {
+  border-radius: 11.5px;
+  box-shadow: 0 0 1.5px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to right, #90e9fa, #00d4ff);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 2.2;
+  text-align: left;
+  color: #ffffff;
+  border-radius: 40px;
+  margin: 0 15px;
 }
