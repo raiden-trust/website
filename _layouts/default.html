@@ -1,7 +1,29 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
-  {% include head.html %}
-  <body>
-    {{ content }}
-  </body>
+{% include head.html %}
+<body>
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">
+                <img src="./img/logo-black.png"/>
+            </a>
+            <ul class="right hide-on-med-and-down valign-wrapper">
+                <li><a href="https://www.raidentrust.li">Home</a></li>
+                <li><a href="mailto:contact@raidentrust.li">Contact</a></li>
+                <li><a href="/guidelines.html">Guidelines</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPSkVo3Hx2GCm6kkFXaQZJ4zpYBMZlXM-mJgIgZJzX0tD41w/viewform" target="_blank" class="apply-btn">Apply Now</a></li>
+            </ul>
+            <ul class="sidenav" id="mobile">
+                <li><a href="https://www.raidentrust.li">Home</a></li>
+                <li><a class="bug-bounty-btn" href="mailto:contact@raidentrust.li">Contact</a></li>
+                <li><a href="/guidelines.html">Guidelines</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPSkVo3Hx2GCm6kkFXaQZJ4zpYBMZlXM-mJgIgZJzX0tD41w/viewform" target="_blank">Apply Now</a></li>
+            </ul>
+            <a href="#" data-target="mobile" class="sidenav-trigger right trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
+{{ content }}
+</body>
 </html>

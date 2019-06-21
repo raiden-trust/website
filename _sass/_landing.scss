@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   margin: 0;
   padding: 50px 8.5%;
   background-color: black;
@@ -24,6 +24,9 @@ i {
   font-family: 'Roboto Mono', monospace;
   text-align: left;
   margin-left: $content-margin;
+  @media (max-width: 370px) {
+    font-size: 5rem!important;
+  }
 }
 
 .hero h3 {

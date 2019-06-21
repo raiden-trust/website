@@ -142,7 +142,6 @@ p.medium {
 
 .brand-logo {
   left: 0 !important;
-  filter: invert(100%);
 }
 
 .logo-wrapper {
@@ -152,4 +151,45 @@ p.medium {
   text-align: left !important;
   padding-left: 16px;
   padding-top: 8px;
+}
+
+.sidenav-overlay {
+  z-index: 900 !important;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.cta {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.no-margin {
+  margin-left: 0 !important;
+}
+
+ol.numbered {
+  list-style-type: decimal;
+}
+
+.trigger {
+  margin: 0 !important;
+}
+
+.apply-btn {
+  border-radius: 11.5px;
+  box-shadow: 0 0 1.5px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to right, #90e9fa, #00d4ff);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 2.2;
+  text-align: left;
+  color: #ffffff;
+  border-radius: 40px;
+  margin: 0 15px;
 }
